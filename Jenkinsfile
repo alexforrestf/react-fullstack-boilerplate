@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Build 0') {
             steps {
                 echo 'Running springboot'
                 chmod +x ./mvnw
