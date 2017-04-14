@@ -6,6 +6,8 @@ pipeline {
             steps {
                 echo "Running springboot "
                 sh "chmod +x ./mvnw"
+                sh "mvn -v"
+                sh "java -v"
                 sh "./mvnw clean install"
             }
         }
