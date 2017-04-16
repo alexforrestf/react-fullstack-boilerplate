@@ -1,0 +1,11 @@
+---
+- hosts: web
+  vars:
+    http_port: 8080
+    max_clients: 200
+  remote_user: root
+  tasks:
+  - name: write the Java file
+    template:
+      src: example.txt
+      dest: copied-example.txt

@@ -9,5 +9,12 @@ pipeline {
                 sh "mvn clean install"
             }
         }
+        stage('deploy') {
+            node {
+                ansiblePlaybook(
+                    playbook: 'ansible/main.yml'
+                    )
+            }
+        }
     }
 }
