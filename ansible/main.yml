@@ -3,7 +3,8 @@
   vars:
     http_port: 8080
     max_clients: 200
-  remote_user: root
+  remote_user: alexforrestf
+  become: yes
   tasks:
   - name: write the Java file
     template:
