@@ -10,4 +10,4 @@
       src: ../target/react-fullstack-boilerplate-0.0.1-SNAPSHOT.jar
       dest: /home/alexforrestf/react-fullstack-boilerplate-0.0.1-SNAPSHOT.jar
   - name: start the Java app
-    command: java -jar /home/alexforrestf/react-fullstack-boilerplate-0.0.1-SNAPSHOT.jar
+    command: nohup java -jar /home/alexforrestf/react-fullstack-boilerplate-0.0.1-SNAPSHOT.jar &
