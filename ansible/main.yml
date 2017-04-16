@@ -8,4 +8,4 @@
   - name: write the Java file
     template:
       src: example.txt
-      dest: copied-example.txt
+      dest: /home/alexforrestf/copied-example.txt
