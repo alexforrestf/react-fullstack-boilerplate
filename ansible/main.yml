@@ -9,6 +9,7 @@
     copy:
       src: ../target/react-fullstack-boilerplate-0.0.1-SNAPSHOT.jar
       dest: /home/alexforrestf/react-fullstack-boilerplate-0.0.1-SNAPSHOT.jar
+  - name: Write supervisor config
     copy:
       src: supervisor.conf
       dest: /home/alexforrestf/supervisor.conf
