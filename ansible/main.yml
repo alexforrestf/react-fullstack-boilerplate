@@ -7,7 +7,7 @@
   tasks:
   - name: write the Java file
     template:
-      src: target/react-fullstack-boilerplate-0.0.1-SNAPSHOT.jar
+      src: ../target/react-fullstack-boilerplate-0.0.1-SNAPSHOT.jar
       dest: /home/alexforrestf/react-fullstack-boilerplate-0.0.1-SNAPSHOT.jar
 
 
