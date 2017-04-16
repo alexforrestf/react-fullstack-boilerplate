@@ -14,3 +14,4 @@
         name: web
         state: restarted
         config: supervisor.conf
+        supervisorctl_path: /usr/local/bin/supervisorctl
