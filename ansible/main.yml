@@ -5,9 +5,12 @@
     max_clients: 200
   remote_user: root
   tasks:
-  - name: write the Java file
+  - name: Write the Java file
     copy:
       src: ../target/react-fullstack-boilerplate-0.0.1-SNAPSHOT.jar
       dest: /home/alexforrestf/react-fullstack-boilerplate-0.0.1-SNAPSHOT.jar
-  - name: start the Java app
-    command: nohup java -jar /home/alexforrestf/react-fullstack-boilerplate-0.0.1-SNAPSHOT.jar &
+  - name: (Re-)start the Java app
+    - supervisorctl:
+        name: web
+        state: restarted
+        config: supervisor.conf
