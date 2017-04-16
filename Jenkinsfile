@@ -5,8 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Running springboot install"
-                sh "chmod +x ./mvnw"
-                sh "./mvnw clean install"
+                sh "mvn clean install"
             }
         }
         stage('deploy') {
