@@ -12,9 +12,8 @@
   - name: Write supervisor config
     copy:
       src: supervisor.conf
-      dest: /home/alexforrestf/supervisor.conf
+      dest: /etc/supervisor.conf
   - name: (Re-)start the Java app
     supervisorctl:
       name: web
       state: restarted
-      config: /home/alexforrestf/supervisor.conf
