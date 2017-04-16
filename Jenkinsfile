@@ -10,10 +10,8 @@ pipeline {
             }
         }
         stage('deploy') {
-            node {
-                ansiblePlaybook(
-                    playbook: 'ansible/main.yml'
-                    )
+            steps {
+                ansiblePlaybook(playbook: 'ansible/main.yml')
             }
         }
     }
